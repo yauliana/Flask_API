@@ -146,10 +146,6 @@ def submit_data():
             graph_html= f.read()
     if s1=="D":
         value="Days"
-    elif s1=="M":
-        value="Month"
-    else:
-        value="Year"
 
     final_df_1=final_df[[ 'Units per EUR', 'Date']].tail(s2)
     final_df_1=final_df_1.rename(columns={'Units per Euro': 'Prediksi Nilai Kurs', 'Date': 'Tanggal'})
