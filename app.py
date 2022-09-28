@@ -100,7 +100,7 @@ def submit_data():
     model10_svr = SVR(kernel='rbf', C=100 ,epsilon=1, gamma=0.01)
     model10_svr.fit(x_train,y_train)
 
-    oot = pd.DataFrame(pd.date_range('2022-9-5', periods=s2, freq=s1))
+    oot = pd.DataFrame(pd.date_range(end_date, periods=s2, freq=s1))
     oot.rename(columns={0:'Date'}, inplace=True)
     j = 1
     for i in range(len(oot)) :
